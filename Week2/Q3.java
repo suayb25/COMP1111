@@ -7,31 +7,29 @@ package week2;
 
 /**
  *
- * @author suayb
+ * @author talha.ozcelik
  */
 public class Q3 {
     public static void main(String[] args) {
-        //int number = (int) (Math.random()*9);
-        int number = (int) (Math.random()*999) +1;
-        //(int)(Math.random()*(max-min+1)+min);
-        System.out.println("Number: " + number);
+        //(int) (Math.random()*(max-min+1) + min);
+        int number = (int) (Math.random()*1000);
+        //int number1 = (int) (Math.random()*(500) + 1);//1-500
+        //System.out.println("number1: " + number1);
+        System.out.println("Random: " + number);
+        int ones = number%10;
+        int tens = (number/10)%10;
+        int hundreds = number/100;
         if(number<=999 && number>=100){
-            System.out.println("The number has 3 digit.");
+            System.out.println("The number has 3 digits.");
         }else if(number<=99 && number>=10){
-            System.out.println("The number has 2 digit.");
-        }else if(number<=9 && number>=0){
+            System.out.println("The number has 2 digits");
+        }else if(number<=9 & number>=0){
             System.out.println("The number has 1 digit.");
         }
-    }
-    
-    public int digitCount(int number){
-        if(number<=999 && number>=100){
-            return 3;
-        }else if(number<=99 && number>=10){
-            return 2;
-        }else if(number<=9 && number>=0){
-            return 1;
-        }
-        return -1; //otherwise unknown, error
+        
+        System.out.println("Ones : " + ones + ", Tens: " + tens + " , Hundreds: " + hundreds);
+        /*125%10 = 5
+        125/10 = 12.5  -> 12 %10 = 2   
+        125/100 = 1*/
     }
 }
