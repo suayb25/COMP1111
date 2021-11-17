@@ -26,10 +26,7 @@ public class Q7 {
         double x_0 = input.nextDouble();
         double result = x_0;
         for (int i = 0; i < n; i++) {
-            System.out.println(result);
-            System.out.println((a*result*result + b*result + c)/(2*result*a + b));
              result = result - (a*result*result + b*result + c)/(2*result*a + b);
-             System.out.println(result);
         }
         System.out.println("Result = " + result);
     }
