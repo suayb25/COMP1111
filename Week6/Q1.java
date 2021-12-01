@@ -22,21 +22,5 @@ public class Q1 {
             System.out.print("*");
         }
     }
-    
-    public static void displayStars(int emptySpace1, int star1, int emptySpace2, int star2){// Overloaded displayStars()
-         displayStars(emptySpace1, star1);
-         displayStars(emptySpace2, star2);
-     }
-    //Overload = same name by taking different number of input parameters or type of input parameters or both.
-    
-    public static void displayRectangle(int M, int N){////Solution of Q3
-         for (int i = 1; i <= M; i++) {
-             if(i == 1 || i == M){
-                 displayStars(0, N);
-             }else{
-                 displayStars(0, 1, N-2, 1);
-             }    
-             System.out.println("");
-         }
-     }
+   
 }
