@@ -12,10 +12,9 @@ package week6;
 public class Q10 {
 
     public static void main(String[] args) {
-        int result = factorial(0);
-        result = combination(5, 3);
+        int result = factorial(5);
         if (result != -1) {
-            System.out.println(result);
+            System.out.println("Factorial= " + result);
         }else{
             System.out.println("You sent a negative number! Please try to enter numbers bigger or equal to 0 .");
         }
