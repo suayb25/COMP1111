@@ -12,6 +12,8 @@ package week6;
 public class Q1 {
     public static void main(String[] args) {
         displayStars(4, 5);
+		System.out.println("");
+		displayStars(4, 5, 4, 5);
     }
     
     public static void displayStars(int emptySpace, int star){
@@ -22,5 +24,11 @@ public class Q1 {
             System.out.print("*");
         }
     }
+	
+	public static void displayStars(int emptySpace1, int star1, int emptySpace2, int star2){// Overloaded displayStars()
+         displayStars(emptySpace1, star1);
+         displayStars(emptySpace2, star2);
+     }
+    //Overload = same name by taking different number of input parameters or type of input parameters or both.
    
 }
