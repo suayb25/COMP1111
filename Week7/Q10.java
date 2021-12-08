@@ -19,6 +19,7 @@ public class Q10 {
         if (N == 0) {
             return;
         }
+		//System.out.print(N % 10 + " ");
         displayDigits(N / 10);
         System.out.print(N % 10 + " ");
     }
