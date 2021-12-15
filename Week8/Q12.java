@@ -7,7 +7,7 @@ package week8;
 
 import java.util.Scanner;
 
-/**q
+/**
  *
  * @author talha
  */
